@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "file content" >README.md
+echo "hello, world"
