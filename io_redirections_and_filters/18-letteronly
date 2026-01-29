@@ -1,0 +1,3 @@
+#!/bin/bash
+sed -n '/^[A-Za-z]/p' /etc/ssh/sshd_config
+
