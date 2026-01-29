@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "Best School" > "./\\*\\\\'\"Best School\"\\'\\\\*\$?\\*\\*\\*\\*\\*:)"
+cat > "./\\*\\\\'\"Best School\"\\'\\\\*\$?\\*\\*\\*\\*\\*:)" << 'EOF'
+Best School
+EOF
+
