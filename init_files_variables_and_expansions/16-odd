@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e '#!/bin/bash\nawk '\''NR % 2 == 1'\' > 100-odd
+sort | perl -ne 'print if $. % 2 != 0'
