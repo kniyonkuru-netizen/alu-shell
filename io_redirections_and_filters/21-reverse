@@ -1,2 +1,2 @@
 #!/bin/bash
-rev
+echo -e "#!/bin/bash\nerv" > 21-reverse
