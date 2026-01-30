@@ -1,4 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" | while IFS= read -r file; do
-    echo "${file##*/}" | sed 's/\.gif$//'
-done | LC_ALL=C sort -f
+find . -type f -name "*.gif" -exec sh -c 'for f; do basename="${f##*/}"; echo "${basename%.gif}"; done' sh {} + | LC_ALL=C sort -f
