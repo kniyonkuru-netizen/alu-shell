@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Using while loop with read and cut
+while IFS= read -r line; do
+    # Extract fields using cut command
+    username=$(echo "$line" | cut -d: -f1)
+    uid=$(echo "$line" | cut -d: -f3)
+    home=$(echo "$line" | cut -d: -f6)
+    echo "${username}:${uid}:${home}"
+done < /etc/passwd
